@@ -1,0 +1,65 @@
+@media screen and (max-width: 1500vw) {
+  .box {
+    background-color: cyan;
+    height: 100vh;
+    width: 100vw;
+  }
+  .box::after {
+    display: flex;
+    justify-content: center;
+    padding-top: 500px;
+    content: "xxl (extra extra large)=>1400px";
+  }
+}
+@media screen and (max-width: 1300px) {
+  .box {
+    background-color: lawngreen;
+  }
+  .box::after {
+    padding-top: 500px;
+    content: "xl (extra large) => 1200px";
+  }
+}
+@media screen and (max-width: 1000px) {
+  .box {
+    background-color: olive;
+  }
+  .box::after {
+    padding-top: 500px;
+    content: "lg (large) => 992px";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .box {
+    background-color: darkred;
+  }
+  .box::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "md (medium) => 768px";
+  }
+}
+@media screen and (max-width: 600px) {
+  .box {
+    background-color: mediumslateblue;
+  }
+  .box::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "sm  (small) => 576px";
+  }
+}
+@media screen and (max-width: 300px) {
+  .box {
+    background-color: darkgrey;
+  }
+  .box::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "xs ( extra small ) < 576px";
+  }
+}
